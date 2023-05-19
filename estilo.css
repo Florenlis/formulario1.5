@@ -5,12 +5,12 @@
     box-sizing: border-box;
 }
 :root {
-    --primary: rgb(8, 115, 209);
+    --primary: red ;
     --black: #000;
     --white: #FFF;
 }
 .header {
-    background-image: url(./img/imagem.jpg);
+    background-image: url(./img/imgnew.jpeg);
     padding: 1.5rem;;
 }
 header h1 {
@@ -44,11 +44,54 @@ header nav ul li a {
     font-size: larger;
 }
 main.inicio div {
-    margin: 0.5rem;
+    margin: 0.6rem;
+    justify-content: center;
 }
 main.inicio div h3 {
-    padding: 0.6rem;
+    padding: 0.7rem;
 }
+
+main ul li {
+   
+    list-style-type: upper-roman;
+}
+main ul{
+    padding-left: 1rem;
+}
+
+main.contato form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    font-size: 1.7rem;
+}
+main.contato form fieldset p{
+    padding: 5px; 
+}
+main.contato form fieldset{
+  padding-right: 3rem;
+}
+main.contato form fieldset p button {
+    background-color: #fd0000b0;
+    max-width: 20%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: 0.7 black;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 1rem;
+}
+main.contato form fieldset p div {
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #000;
+    height: 5rem;
+}
+
 /* Tabela */
 main.tabela p {
     margin-top: 1rem;

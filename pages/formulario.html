@@ -12,37 +12,82 @@
     <nav>
         <ul>
             <li>
-                <a href="./index.html">Início</a>
+                <a href="../index.html">Início</a>
             </li>
             <li>
-                <a href="./pages/tabela.html">Curso</a>
+                <a href="./tabela.html">Curso</a>
             </li>
             <li>
-                <a href="./pages/resposta.html">FAQ</a>
+                <a href="./resposta.html">FAQ</a>
             </li>
             <li>
-                <a href="./pages/formulario.html">Contato</a>
+                <a href="./formulario.html">Contato</a>
             </li>
         </ul>
     </nav>
 </header>
-<body>
-    <form action="/action_page.php">
-        <label for="fname">Nome:</label>
-        <input type="text" id="fname" name="fname" value="João"><br>
-       <label for="email">e-mail:</label>
-      <input type="email" name="email" value="name@email"><br>
-      <label for="homem">masculino</label> 
-      <input type="radio" name="pessoa" id="homem" value="M">
-      <label for="mulher">Feminino</label> 
-      <input type="radio" name="pessoa" id="mulher" value="F"><br>
-      <label for="estad">estado:</label>
-      <select name="estado" id="estad" value="" required>
- <option value="1"> MG</option>
- <option value="2"> SP</option>
- <option value="3"> RJ</option>
- <option value="4"> ES</option>
-      <input type="submit" value="Submit">
-    </form> 
+<main class="contato">
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Contato</legend>
+
+            <label for="Nome">Nome:</label>
+                <input type="text" name="texto" placeholder="João"><br />
+            
+
+            <label for="email">E-mail:</label>
+                <input type="email" name="email" placeholder="name@email"><br />
+            
+
+            <p>
+                <input type="radio" name="Sexo" id="Homem" value="M"> 
+                <label for="Homem">Masculino</label> 
+                
+                <input type="radio" name="Sexo" id="Mulher" value="F"> 
+                <label for="Mulher">Feminino</label> 
+
+                <input type="radio" name="Sexo" id="Pessoa" value="B"> 
+                <label for="Non-Binary">Não-Binario</label> 
+               
+            </p>
+
+            <p>
+                <label for="estado">Estado/Cidade</label>
+                <select name="estado" id="">
+                    <option value=""></option>
+                    <option value="MG">MG</option>
+                    <option value="RJ">RJ</option>
+                    <option value="SP">SP</option>
+                    <option value="ES">ES</option>
+                    <option value="BA">BA</option>
+                    <option value="PR">PR</option>
+                </select>
+                <input type="text" name="cidade" placeholder="Rio de Janeiro"><br />
+            </p>
+
+            <p>Selecione um arquivo
+                <input type="file" name="file"><br />
+            </p>
+
+            <p>
+                <label for="sug">Sugestões</label> <br>
+                <textarea name="sug" id="sug" cols="30" rows="10" required></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </p>
+
+        </fieldset>
+    </form>
+
+</main>
+
+<footer>
+    <p>© copyleft</p>
+</footer>
 </body>
+
 </html>
+
